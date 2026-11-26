@@ -1,0 +1,334 @@
+(footprint "DSUB-TH_DS1034-01-09FBN044"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -15.5255 -6.795 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "DSUB-TH_DS1034-01-09FBN044"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -15.4 -6.505)
+		(end 15.4 -6.505)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -15.4 6.703)
+		(end -15.4 -6.505)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -7.6225 -2.695)
+		(end -6.6065 3.147)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -6.8605 -3.711)
+		(end 6.6015 -3.711)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -5.5905 3.909)
+		(end 5.5855 3.909)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 6.6015 3.147)
+		(end 7.6175 -2.695)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 15.4 -6.505)
+		(end 15.4 -2.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 15.4 -2.9)
+		(end 15.4 6.703)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 15.4 6.703)
+		(end -15.4 6.703)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start -7.6225 -2.695)
+		(mid -7.419082 -3.336268)
+		(end -6.8605 -3.711)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start -5.5905 3.909)
+		(mid -6.23151 3.705383)
+		(end -6.6065 3.147)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start 6.6015 -3.711)
+		(mid 7.266388 -3.359888)
+		(end 7.6175 -2.695)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_arc
+		(start 6.6015 3.147)
+		(mid 6.226544 3.705283)
+		(end 5.5855 3.909)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -15.7755 -6.910933)
+		(end 15.805433 7.0785)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -15.5 -6.605)
+		(end 15.5 -6.605)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -15.5 6.803)
+		(end -15.5 -6.605)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 15.5 -6.605)
+		(end 15.5 6.803)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 15.5 6.803)
+		(end -15.5 6.803)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy 15.555433 -6.628461)
+			(xy 15.522961 -6.660933)
+			(xy 15.477039 -6.660933)
+			(xy 15.444567 -6.628461)
+			(xy 15.444567 -6.582539)
+			(xy 15.477039 -6.550067)
+			(xy 15.522961 -6.550067)
+			(xy 15.555433 -6.582539)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 5.54 -1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at 2.77 -1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "3" thru_hole circle
+		(at 0 -1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "4" thru_hole circle
+		(at -2.77 -1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "5" thru_hole circle
+		(at -5.54 -1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "6" thru_hole circle
+		(at 4.155 1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "7" thru_hole circle
+		(at 1.385 1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "8" thru_hole circle
+		(at -1.385 1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "9" thru_hole circle
+		(at -4.155 1.42)
+		(size 1.69 1.69)
+		(drill 1.09)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "10" thru_hole circle
+		(at 12.495 0)
+		(size 4.826 4.826)
+		(drill 3.302)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "11" thru_hole circle
+		(at -12.495 0)
+		(size 4.826 4.826)
+		(drill 3.302)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(embedded_fonts no)
+)

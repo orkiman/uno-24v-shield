@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "uno24v")(type "KiCad")(uri "${KIPRJMOD}/lib/uno24v.pretty")(options "")(descr "UNO 24V shield footprints (LCSC/EasyEDA originals)"))
+)
