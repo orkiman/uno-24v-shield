@@ -1,0 +1,28 @@
+refs / LCSC / our footprint / result / polarity
+C1,C2,C3,C4                  C1592      C0603                                        footprint = JLCPCB   
+D1                           C116100    SOD-123FL_L2.7-W1.8-LS3.8-RD                 footprint = JLCPCB   cathode = pin 1 (C), JLC silk: band at pad 1, band at pad 1 -> OK
+DF1,DF2,DF3,DF4              C5343335   SMB_L4.6-W3.7-LS5.4-RD                       footprint = JLCPCB   cathode = pin 1 (K), JLC silk: band at pad 1, band at pad 1 -> OK
+DZ1,DZ2,DZ3,DZ4              C908796    SMB_L4.6-W3.6-LS5.3-RD                       footprint = JLCPCB   cathode = pin 1 (C), JLC silk: band at pad 1, band at pad 1 -> OK
+F1                           C19723490  F1812                                        footprint = JLCPCB   
+J1,J3                        C358689    HDR-TH_8P-P2.54-H-M                          footprint = JLCPCB   
+J2                           C57369     HDR-TH_10P-P2.54-V-M-1                       footprint = JLCPCB   
+J4                           C178289    HDR-TH_6P-P2.54-V-M-1                        footprint = JLCPCB   
+J5,J6,J7                     C475156    CONN-TH_4P-P3.50_KF250-3.5-4P-1              footprint = JLCPCB   
+J8                           C53474757  DSUB-TH_DS1034-01-09FBN044                   same pads, numbering identical pad pattern; JLC library numbers the pins mirrored - the part fits one way only, so the physical part defines the wiring (see REVIEW.md)
+JP1                          C234182    HDR-TH_2P-P2.54-V-M-1                        footprint = JLCPCB   
+LED1                         C19171394  LED0603-FD                                   footprint = JLCPCB   cathode = pin 2 (K), JLC silk: chamfer at pad 2 -> OK
+LED2,LED3,LED4,LED5          C19171390  LED0603-FD                                   footprint = JLCPCB   cathode = pin 2 (-), JLC silk: chamfer at pad 2 -> OK
+LED6,LED7,LED8,LED9          C2994781   LED-SMD_L1.6-W0.8_19-219-GHC-YR2T1B5Y-3T     footprint = JLCPCB   cathode = pin 2 (K), JLC silk: chamfer at pad 2 -> OK
+Q1,Q2,Q3,Q4                  C534374    PG-TDSON-8_L5.2-W5.9-P1.27-LS6.2-BL-EP       footprint = JLCPCB   
+R1                           C8218      R0603                                        footprint = JLCPCB   
+RN1,RN4                      C107374    RES-ARRAY-SMD_0603-8P-L3.2-W1.6-BL           footprint = JLCPCB   
+RN2                          C29719     RES-ARRAY-SMD_0603-8P-L3.2-W1.6-BL           footprint = JLCPCB   
+RN3                          C728719    RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL           footprint = JLCPCB   
+RN5                          C170189    RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL           footprint = JLCPCB   
+RN6                          C25724     RES-ARRAY-SMD_0402-8P-L2.0-W1.0-BL           footprint = JLCPCB   
+SW1                          C720477    SW-SMD_L4.0-W2.9-LS5.0                       footprint = JLCPCB   
+TVS1,TVS2,TVS3,TVS4          C41376102  SMB_L4.6-W3.6-LS5.3-R-RD                     footprint = JLCPCB   cathode = pin 2 (C), JLC silk: diode glyph at pad 2 -> OK
+TVS5                         C113997    SMB_L4.3-W3.6-LS5.4-RD                       footprint = JLCPCB   cathode = pin 1 (C), JLC silk: band at pad 1, band at pad 1, band at pad 1 -> OK
+U2                           C26860     SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL             footprint = JLCPCB   
+U3                           C116325    TO-252-2_L6.6-W6.1-P4.57-LS9.9-TL-CW         footprint = JLCPCB   
+U4                           C845537    SOP-18_L11.4-W7.6-P1.27-LS10.6-BL            footprint = JLCPCB   

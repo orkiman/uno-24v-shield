@@ -280,6 +280,10 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
+        "pattern": "/Power/+24V_IN"
+      },
+      {
+        "netclass": "Power",
         "pattern": "+24V"
       },
       {
@@ -288,35 +292,35 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/OUT_D8"
+        "pattern": "/Outputs/OUT_D8"
       },
       {
         "netclass": "Power",
-        "pattern": "/OUT_D9"
+        "pattern": "/Outputs/OUT_D9"
       },
       {
         "netclass": "Power",
-        "pattern": "/OUT_D10"
+        "pattern": "/Outputs/OUT_D10"
       },
       {
         "netclass": "Power",
-        "pattern": "/OUT_D11"
+        "pattern": "/Outputs/OUT_D11"
       },
       {
         "netclass": "Power",
-        "pattern": "/FB_D8"
+        "pattern": "/Outputs/FB_D8"
       },
       {
         "netclass": "Power",
-        "pattern": "/FB_D9"
+        "pattern": "/Outputs/FB_D9"
       },
       {
         "netclass": "Power",
-        "pattern": "/FB_D10"
+        "pattern": "/Outputs/FB_D10"
       },
       {
         "netclass": "Power",
-        "pattern": "/FB_D11"
+        "pattern": "/Outputs/FB_D11"
       }
     ]
   },

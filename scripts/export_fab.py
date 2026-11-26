@@ -139,6 +139,9 @@ def docs():
 
 if __name__ == '__main__':
     os.makedirs(FAB, exist_ok=True)
+    # footprint / polarity check against the JLCPCB library must pass first
+    subprocess.run(['python3', os.path.join(HERE, 'check_polarity.py')], check=True)
+    subprocess.run(['python3', os.path.join(HERE, 'polarity_sheet.py')], check=True)
     z, files = gerbers()
     print('gerbers:', z, files)
     b, rows = bom()
