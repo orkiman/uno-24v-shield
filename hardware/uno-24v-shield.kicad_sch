@@ -1,0 +1,403 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c")
+	(paper "A4")
+	(title_block
+		(title "Arduino UNO 24V Shield - Overview")
+		(date "2026-11-26")
+		(rev "6.0")
+		(comment 1 "Outputs D8-D11, inputs D2-D5, RS232 D0/D1")
+		(comment 2 "Derived from EasyEDA v5 (2025-10-22)")
+	)
+	(lib_symbols)
+	(text "ARDUINO UNO 24V SHIELD v6 - overview"
+		(exclude_from_sim no)
+		(at 20.32 30.48 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d8a88d2-cc0b-5fe3-96f2-f7772dd8ab80")
+	)
+	(text "24V in, fuse, TVS, 12V reg"
+		(exclude_from_sim no)
+		(at 27.94 57.15 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "17a0799e-d427-5917-a301-fdfab979a236")
+	)
+	(text "UNO headers, reset"
+		(exclude_from_sim no)
+		(at 104.14 57.15 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f7bafcc-1f74-5c3f-be5c-c828eb2a6b27")
+	)
+	(text "D8-D11 MOSFET outputs"
+		(exclude_from_sim no)
+		(at 180.34 57.15 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d05aee0-f6ce-572f-b21d-21748b6ee7ee")
+	)
+	(text "24V inputs -> D2-D5"
+		(exclude_from_sim no)
+		(at 27.94 92.71 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3a7d3e2-0b90-5723-8565-333fbec20418")
+	)
+	(text "MAX232 + DB9 on D0/D1"
+		(exclude_from_sim no)
+		(at 104.14 92.71 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "baf71e8b-5c4d-5189-976c-0142124e2a3c")
+	)
+	(text "UNO 24V shield v6 (KiCad), derived from EasyEDA v5 \"uno glue controller single fet 231125\""
+		(exclude_from_sim no)
+		(at 20.32 120 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "47857d66-8648-5870-9574-2b032ad48788")
+	)
+	(text "Removed: current sensing (INA180 x4, 20mR shunts RS8-RS11, R8-R11, C8-1..C11-1)"
+		(exclude_from_sim no)
+		(at 20.32 124.2 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d99f7f6f-fcea-56e5-84ce-b2414e471df5")
+	)
+	(text "Removed: glue-gun controller (Q5, L1, R15-R17, +48V, D8-4..D8-6)"
+		(exclude_from_sim no)
+		(at 20.32 128.4 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb40e487-2ccc-550f-90ac-dc4cb16d74cc")
+	)
+	(text "MOSFET sources go straight to GND; flyback clamps return to the board +24V"
+		(exclude_from_sim no)
+		(at 20.32 132.6 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc182fc4-5f46-507d-ac95-8d99fef95165")
+	)
+	(text "New: input fuse F1 + TVS5 (surge / reverse polarity); J5 is 4-pin: +24V and three GND terminals"
+		(exclude_from_sim no)
+		(at 20.32 136.8 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e6bd81e-a198-5b1f-be61-b6967b49b7c4")
+	)
+	(text "Stock swaps: D1 PMEG3020EH -> DS210W, ULN2803 C2690548 -> ULN2803A C845537,"
+		(exclude_from_sim no)
+		(at 20.32 141 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "49bbf167-058c-5867-a688-7a7d640cb492")
+	)
+	(text "  DB9 C86572 -> C53474757 (-JC), KF250-3.5-3P-1 -> KF250-3.5-3P-2 (same pins)"
+		(exclude_from_sim no)
+		(at 20.32 145.2 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7131d8e-79c9-54f2-bcfe-9356f1f2ab88")
+	)
+	(text "Unchanged pin map: D8..D11 -> J6 pins 4..1, J7 pins 4..1 -> D2..D5, RS232 on D0/D1"
+		(exclude_from_sim no)
+		(at 20.32 149.4 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d721d1c0-175f-5cee-ac28-2161b9ac23bd")
+	)
+	(text "v5 reference designators are kept in each symbol field \"v5 ref\""
+		(exclude_from_sim no)
+		(at 20.32 153.6 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "15d98e8e-298c-5113-b6d7-1d88a1fd9da2")
+	)
+	(sheet
+		(at 25.4 45.72)
+		(size 55.88 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "baa609ba-4146-57d6-b87b-3dd8de59f914")
+		(property "Sheetname" "Power"
+			(at 25.4 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 66.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "uno-24v-shield"
+				(path "/5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 45.72)
+		(size 55.88 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "83aa0621-a924-581b-b725-9a34ca3b59d1")
+		(property "Sheetname" "Arduino"
+			(at 101.6 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "arduino.kicad_sch"
+			(at 101.6 66.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "uno-24v-shield"
+				(path "/5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 45.72)
+		(size 55.88 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "10195c5a-8bd8-55b5-bcec-bcd2488be7b3")
+		(property "Sheetname" "Outputs"
+			(at 177.8 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "outputs.kicad_sch"
+			(at 177.8 66.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "uno-24v-shield"
+				(path "/5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 81.28)
+		(size 55.88 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a3f27cdb-9ca7-53f7-b894-45b830a65ebb")
+		(property "Sheetname" "Inputs"
+			(at 25.4 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "inputs.kicad_sch"
+			(at 25.4 102.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "uno-24v-shield"
+				(path "/5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 81.28)
+		(size 55.88 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7323e488-fe6e-5787-bbc0-88d1286c728d")
+		(property "Sheetname" "RS232"
+			(at 101.6 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rs232.kicad_sch"
+			(at 101.6 102.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "uno-24v-shield"
+				(path "/5b5a2a97-c66b-59ef-98bb-0d9a9aa4649c"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

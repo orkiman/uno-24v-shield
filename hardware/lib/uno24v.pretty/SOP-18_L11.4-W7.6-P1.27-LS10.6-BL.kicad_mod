@@ -1,0 +1,272 @@
+(footprint "SOP-18_L11.4-W7.6-P1.27-LS10.6-BL"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -6.1125 -5.9775 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "SOP-18_L11.4-W7.6-P1.27-LS10.6-BL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.826 -3.5715)
+		(end 5.826 -3.5715)
+		(stroke
+			(width 0.1525)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -5.826 3.5715)
+		(end -5.826 -3.5715)
+		(stroke
+			(width 0.1525)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 5.826 -3.5715)
+		(end 5.826 3.5715)
+		(stroke
+			(width 0.1525)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 5.826 3.5715)
+		(end -5.826 3.5715)
+		(stroke
+			(width 0.1525)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_circle
+		(center -5.8475 4.9575)
+		(end -5.697 4.9575)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_circle
+		(center -5.08 2.819)
+		(end -4.93 2.819)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -6.055433 -6.015)
+		(end 6.0255 6.015)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -5.75 -3.8)
+		(end 5.75 -3.8)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -5.75 3.8)
+		(end -5.75 -3.8)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.75 -3.8)
+		(end 5.75 3.8)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 5.75 3.8)
+		(end -5.75 3.8)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy -5.694567 5.127039)
+			(xy -5.727039 5.094567)
+			(xy -5.772961 5.094567)
+			(xy -5.805433 5.127039)
+			(xy -5.805433 5.172961)
+			(xy -5.772961 5.205433)
+			(xy -5.727039 5.205433)
+			(xy -5.694567 5.172961)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -5.08 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "2" smd oval
+		(at -3.81 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "3" smd oval
+		(at -2.54 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "4" smd oval
+		(at -1.27 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "5" smd oval
+		(at 0 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "6" smd oval
+		(at 1.27 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "7" smd oval
+		(at 2.54 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "8" smd oval
+		(at 3.81 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "9" smd oval
+		(at 5.08 4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "10" smd oval
+		(at 5.08 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "11" smd oval
+		(at 3.81 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "12" smd oval
+		(at 2.54 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "13" smd oval
+		(at 1.27 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "14" smd oval
+		(at 0 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "15" smd oval
+		(at -1.27 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "16" smd oval
+		(at -2.54 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "17" smd oval
+		(at -3.81 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "18" smd oval
+		(at -5.08 -4.9575)
+		(size 0.63 1.615)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+)

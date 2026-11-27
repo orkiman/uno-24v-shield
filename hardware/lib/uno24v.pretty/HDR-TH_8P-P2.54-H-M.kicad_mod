@@ -1,0 +1,225 @@
+(footprint "HDR-TH_8P-P2.54-H-M"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -10.5995 -1.4995 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "HDR-TH_8P-P2.54-H-M"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -10.41 -1.22)
+		(end 10.41 -1.22)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -10.41 1.22)
+		(end -10.41 -1.22)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 10.41 -1.22)
+		(end 10.41 1.22)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 10.41 1.22)
+		(end -10.41 1.22)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -10.842433 -1.6225)
+		(end 10.8125 1.652433)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -10.537 -1.347)
+		(end 10.537 -1.347)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -10.537 1.347)
+		(end -10.537 -1.347)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 10.537 -1.347)
+		(end 10.537 1.347)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 10.537 1.347)
+		(end -10.537 1.347)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy -10.481567 1.324039)
+			(xy -10.514039 1.291567)
+			(xy -10.559961 1.291567)
+			(xy -10.592433 1.324039)
+			(xy -10.592433 1.369961)
+			(xy -10.559961 1.402433)
+			(xy -10.514039 1.402433)
+			(xy -10.481567 1.369961)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -8.89 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+	)
+	(pad "2" thru_hole circle
+		(at -6.35 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "3" thru_hole circle
+		(at -3.81 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "4" thru_hole circle
+		(at -1.27 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "5" thru_hole circle
+		(at 1.27 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "6" thru_hole circle
+		(at 3.81 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "7" thru_hole circle
+		(at 6.35 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(pad "8" thru_hole circle
+		(at 8.89 0 180)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+	)
+	(embedded_fonts no)
+)

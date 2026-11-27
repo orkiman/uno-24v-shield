@@ -1,0 +1,240 @@
+(footprint "LED-SMD_L1.6-W0.8_19-219-GHC-YR2T1B5Y-3T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.8 -1.1175 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "LED-SMD_L1.6-W0.8_19-219-GHC-YR2T1B5Y-3T"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.3905 -0.446)
+		(end -1.0905 -0.746)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.3905 -0.346)
+		(end -1.3905 -0.446)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.3905 0.354)
+		(end -1.3905 -0.346)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.3905 0.354)
+		(end -1.3905 0.4545)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.3905 0.4545)
+		(end -1.0905 0.754)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.0405 -0.746)
+		(end -1.0905 -0.746)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -0.0405 0.754)
+		(end -1.0905 0.754)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.3395 -0.7435)
+		(end 1.4895 -0.7435)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 0.3395 0.7565)
+		(end 1.4895 0.7565)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 1.4895 0.7565)
+		(end 1.4895 -0.7235)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_poly
+		(pts
+			(xy 0.3 0.4)
+			(xy 0.3 -0.4)
+			(xy 0.1 -0.4)
+			(xy 0.1 0.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+	)
+	(fp_rect
+		(start -1.4495 -0.708933)
+		(end 1.4495 0.6755)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_line
+		(start -0.8005 -0.4)
+		(end 0.7995 -0.4)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -0.8005 0.4)
+		(end -0.8005 -0.4)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.7995 -0.4)
+		(end 0.7995 0.4)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 0.7995 0.4)
+		(end -0.8005 0.4)
+		(stroke
+			(width 0.051)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+	(fp_poly
+		(pts
+			(xy 0.854933 -0.426461)
+			(xy 0.822461 -0.458933)
+			(xy 0.776539 -0.458933)
+			(xy 0.744067 -0.426461)
+			(xy 0.744067 -0.380539)
+			(xy 0.776539 -0.348067)
+			(xy 0.822461 -0.348067)
+			(xy 0.854933 -0.380539)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.7995 0 270)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "2" smd rect
+		(at -0.7995 0 270)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+)
