@@ -554,6 +554,77 @@ def apply_edits(board):
         placed = place_vias_near(board, src, n=4, dia=0.8, drill=0.4)
         print('  %s source vias: %s' % (q, ', '.join('(%.2f, %.2f)' % v for v in placed)))
 
+    # (c) 78M12 tab: solid connection to the GND pour + heat-spreading vias to
+    #     the bottom pour (the regulator can dissipate ~1-1.5 W, see REVIEW.md)
+    u3 = board.FindFootprintByReference('U3')
+    tab = [p for p in u3.Pads() if p.GetNetname() == 'GND'][0]
+    tab.SetLocalZoneConnection(pcbnew.ZONE_CONNECTION_FULL)
+    placed = place_vias_near(board, [tab.GetPosition()], n=8, dia=0.8, drill=0.4, radius=6.0, pitch=1.4)
+    print('  U3 tab vias: %s' % ', '.join('(%.2f, %.2f)' % v for v in placed))
+
+    # (d) layer change on the D8 output path: one 0.4 mm via -> two in parallel
+    out8 = D2S['OUT_D8']
+    for v in [t for t in board.GetTracks() if t.GetClass() == 'PCB_VIA' and t.GetNetname() == out8]:
+        add_parallel_via(board, 'OUT_D8', (v.GetPosition().x / MM, v.GetPosition().y / MM))
+
+
+def add_parallel_via(board, net, near, dia=0.9, drill=0.4, radius=3.5, gap=0.2):
+    """second via next to an existing one, joined on both layers by 1 mm tracks"""
+    nc = board.FindNet(D2S.get(net, net)).GetNetCode()
+    x0, y0 = near
+    tw = 1.0
+    best = None
+    for i in range(-int(radius / 0.1), int(radius / 0.1) + 1):
+        for j in range(-int(radius / 0.1), int(radius / 0.1) + 1):
+            x, y = x0 + i * 0.1, y0 + j * 0.1
+            dd = math.hypot(x - x0, y - y0)
+            if dd < dia + 0.1 or dd > radius:
+                continue
+            ok = True
+            seg_pts = [P(x0 + (x - x0) * k / 10, y0 + (y - y0) * k / 10) for k in range(11)]
+            for t in board.GetTracks():
+                if t.GetNetCode() == nc:
+                    continue
+                for q in seg_pts:
+                    r = dia / 2 if q == seg_pts[-1] else tw / 2
+                    if t.GetClass() == 'PCB_VIA':
+                        if (t.GetPosition() - q).EuclideanNorm() < t.GetWidth(pcbnew.F_Cu) / 2 + mm(r + gap):
+                            ok = False
+                    elif point_on_item(t, q, mm(r + gap)):
+                        ok = False
+                    if not ok:
+                        break
+                if not ok:
+                    break
+            if ok:
+                for f in board.GetFootprints():
+                    for p in f.Pads():
+                        if p.GetNetCode() == nc:
+                            continue
+                        for q in seg_pts:
+                            r = dia / 2 if q == seg_pts[-1] else tw / 2
+                            if p.HitTest(q, mm(r + gap + 0.05)):
+                                ok = False
+                                break
+                        if not ok:
+                            break
+                    if not ok:
+                        break
+            if ok and (best is None or dd < best[0]):
+                best = (dd, x, y)
+    if best is None:
+        print('  no room for a parallel %s via' % net)
+        return None
+    _, x, y = best
+    for v in list(board.GetTracks()):   # stitching vias in the way go
+        if v.GetClass() == 'PCB_VIA' and v.GetNetname() == 'GND' and (v.GetPosition() - P(x, y)).EuclideanNorm() < mm(dia + 0.3):
+            board.Remove(v)
+    add_via(board, net, x, y, dia, drill)
+    add_track(board, net, pcbnew.F_Cu, [(x0, y0), (x, y)], tw)
+    add_track(board, net, pcbnew.B_Cu, [(x0, y0), (x, y)], tw)
+    print('  parallel %s via at (%.2f, %.2f)' % (net, x, y))
+    return x, y
+
 
 def place_vias_near(board, targets, n, dia, drill, radius=3.5, gap=0.35, pitch=1.3):
     """put n GND vias as close as possible to the target points, keeping
